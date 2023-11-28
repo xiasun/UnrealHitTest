@@ -2,7 +2,7 @@
 
 To demonstrate the precision issue with hit tests on ProceduralMeshComponent, let's examine a project where three actors with ProceduralMeshComponent are spawned.
 
-The first actor has a size of 100 and a scale of 1. The second actor has a size of 1 and a scale of 100. The third actor has a size of 0.005 and a scale of 20000.
+The first mesh has a size of 100 and a scale of 1. The second mesh has a size of 1 and a scale of 100. The third mesh has a size of 0.005 and a scale of 20000.
 
 ```cpp
 // HitTestGameMode.cpp 
