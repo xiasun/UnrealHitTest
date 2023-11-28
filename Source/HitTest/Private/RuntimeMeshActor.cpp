@@ -60,6 +60,9 @@ void ARuntimeMeshActor::CreateCube(float Length)
 	Normals.Init(FVector::ZeroVector, Vertices.Num());
 
 	ProceduralMesh->CreateMeshSection(0, Vertices, Triangles, Normals, TArray<FVector2D>(), TArray<FColor>(), TArray<FProcMeshTangent>(), true);
+
+    UMaterialInterface* DefaultMaterial = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/defaultMat"));
+	ProceduralMesh->SetMaterial(0, DefaultMaterial);
 }
 
 
